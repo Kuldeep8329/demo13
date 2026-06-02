@@ -16,14 +16,14 @@ export default function App() {
     // Remove existing theme classes
     const themes = ['theme-rainforest', 'theme-meadow', 'theme-redwood', 'theme-glen'];
     themes.forEach((t) => document.body.classList.remove(t));
-    
+
     // Add current biome theme class
     document.body.classList.add(`theme-${biome}`);
   }, [biome]);
 
   return (
     <div className="app-container">
-      
+
       {/* Background Canvas Particles */}
       <BackgroundParticles biome={biome} />
 
@@ -47,10 +47,10 @@ export default function App() {
           </div>
         </div>
       </header>
-
+//this changes are for demo
       {/* Layout Content */}
       <main className="main-container">
-        
+
         {/* Hero Section */}
         <section id="hero-section">
           <Hero biome={biome} />
